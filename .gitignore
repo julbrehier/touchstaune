@@ -1,0 +1,32 @@
+# --- Python -------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.eggs/
+
+# --- Environments --------------------------------------------------------------
+.venv/
+venv/
+.env
+
+# --- Tooling caches ------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- Editors / OS --------------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Project-specific ----------------------------------------------------------
+# Recorded game snapshots contain other players' Riot IDs: never commit them raw.
+# Anonymise first (see COMPLIANCE.md) and place sanitised fixtures in tests/fixtures/.
+snapshots/
+*.pem
