@@ -19,3 +19,9 @@ def load_fixture(name: str) -> dict[str, Any]:
 def raw_game() -> dict[str, Any]:
     """A fresh copy of the synthetic ``/allgamedata`` payload."""
     return load_fixture("allgamedata_synthetic.json")
+
+
+@pytest.fixture
+def real_practice_game() -> dict[str, Any]:
+    """An anonymised real ``/allgamedata`` snapshot (Practice Tool, one player)."""
+    return load_fixture("allgamedata_practicetool.json")

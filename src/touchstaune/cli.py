@@ -7,6 +7,7 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from touchstaune import __version__
+from touchstaune.anonymise import anonymise_file
 from touchstaune.live_client import LiveClient, LiveClientError
 from touchstaune.recorder import GameRecorder, RecorderState
 from touchstaune.render import format_scoreboard
@@ -47,7 +48,25 @@ def build_parser() -> argparse.ArgumentParser:
     probe.add_argument("--quiet", action="store_true", help="record without printing scoreboards")
     probe.set_defaults(handler=run_probe)
 
+    anonymise = commands.add_parser(
+        "anonymise",
+        help="copy a recorded snapshot with every player identifier replaced by a placeholder",
+    )
+    anonymise.add_argument("source", type=Path, help="recorded snapshot (JSON)")
+    anonymise.add_argument("destination", type=Path, help="where to write the anonymised copy")
+    anonymise.set_defaults(handler=run_anonymise)
+
     return parser
+
+
+def run_anonymise(args: argparse.Namespace) -> int:
+    """Run the ``anonymise`` command."""
+    if args.source.resolve() == args.destination.resolve():
+        logger.error("Refusing to overwrite the original snapshot: choose another destination.")
+        return 2
+    count = anonymise_file(args.source, args.destination)
+    logger.info("Anonymised %d player(s) into %s", count, args.destination)
+    return 0
 
 
 def run_probe(args: argparse.Namespace) -> int:

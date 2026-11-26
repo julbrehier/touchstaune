@@ -13,3 +13,7 @@ adheres to [Semantic Versioning](https://semver.org/).
 - `touchstaune.live_client`: typed pydantic models and an httpx client for the Live Client Data API.
 - `touchstaune.recorder.GameRecorder`: records game snapshots to disk as replayable JSON.
 - `touchstaune probe` CLI command with a live text scoreboard.
+- `touchstaune anonymise` CLI command: replaces every player identifier in a recorded
+  snapshot with stable placeholders (`Player1#ANON`, ...), including inside events.
+- First real (anonymised) fixture, and tests pinning down conventions of the real API.
+- `ChampionStats` now models every stat the API reports, with units documented.
