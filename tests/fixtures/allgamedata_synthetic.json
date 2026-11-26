@@ -1,0 +1,100 @@
+{
+  "activePlayer": {
+    "riotId": "Tester#EUW",
+    "riotIdGameName": "Tester",
+    "summonerName": "Tester#EUW",
+    "level": 7,
+    "currentGold": 1234.5,
+    "championStats": {
+      "attackDamage": 98.0,
+      "abilityPower": 0.0,
+      "attackSpeed": 0.81,
+      "armor": 52.3,
+      "magicResist": 38.1,
+      "currentHealth": 812.0,
+      "maxHealth": 1020.0,
+      "abilityHaste": 10.0,
+      "someFutureStat": 1.0
+    },
+    "fullRunes": {}
+  },
+  "allPlayers": [
+    {
+      "championName": "Garen",
+      "rawChampionName": "game_character_displayname_Garen",
+      "riotId": "Tester#EUW",
+      "riotIdGameName": "Tester",
+      "summonerName": "Tester#EUW",
+      "team": "ORDER",
+      "position": "TOP",
+      "level": 7,
+      "isBot": false,
+      "isDead": false,
+      "respawnTimer": 0.0,
+      "items": [
+        {"itemID": 1055, "displayName": "Doran's Blade", "slot": 0, "count": 1, "price": 450, "consumable": false, "canUse": false},
+        {"itemID": 2003, "displayName": "Health Potion", "slot": 1, "count": 2, "price": 50, "consumable": true, "canUse": true},
+        {"itemID": 3340, "displayName": "Stealth Ward", "slot": 6, "count": 1, "price": 0, "consumable": false, "canUse": true}
+      ],
+      "scores": {"kills": 2, "deaths": 1, "assists": 3, "creepScore": 64, "wardScore": 4.25}
+    },
+    {
+      "championName": "Lux",
+      "riotId": "AllyOne#EUW",
+      "riotIdGameName": "AllyOne",
+      "summonerName": "AllyOne#EUW",
+      "team": "ORDER",
+      "position": "MIDDLE",
+      "level": 8,
+      "isBot": false,
+      "isDead": true,
+      "respawnTimer": 12.5,
+      "items": [],
+      "scores": {"kills": 4, "deaths": 2, "assists": 1, "creepScore": 71, "wardScore": 2.0}
+    },
+    {
+      "championName": "Darius",
+      "riotId": "EnemyOne#EUW",
+      "riotIdGameName": "EnemyOne",
+      "summonerName": "EnemyOne#EUW",
+      "team": "CHAOS",
+      "position": "TOP",
+      "level": 7,
+      "isBot": false,
+      "isDead": false,
+      "respawnTimer": 0.0,
+      "items": [
+        {"itemID": 1054, "displayName": "Doran's Shield", "slot": 0, "count": 1, "price": 450, "consumable": false, "canUse": false}
+      ],
+      "scores": {"kills": 1, "deaths": 2, "assists": 0, "creepScore": 58, "wardScore": 1.5}
+    },
+    {
+      "championName": "Ahri",
+      "riotId": "EnemyTwo#EUW",
+      "riotIdGameName": "EnemyTwo",
+      "summonerName": "EnemyTwo#EUW",
+      "team": "CHAOS",
+      "position": "MIDDLE",
+      "level": 8,
+      "isBot": false,
+      "isDead": false,
+      "respawnTimer": 0.0,
+      "items": [],
+      "scores": {"kills": 2, "deaths": 4, "assists": 1, "creepScore": 69, "wardScore": 3.0}
+    }
+  ],
+  "events": {
+    "Events": [
+      {"EventID": 0, "EventName": "GameStart", "EventTime": 0.05},
+      {"EventID": 1, "EventName": "MinionsSpawning", "EventTime": 65.0},
+      {"EventID": 2, "EventName": "ChampionKill", "EventTime": 312.4, "KillerName": "Tester", "VictimName": "EnemyOne", "Assisters": ["AllyOne"]}
+    ]
+  },
+  "gameData": {
+    "gameMode": "CLASSIC",
+    "gameTime": 425.7,
+    "mapName": "Map11",
+    "mapNumber": 11,
+    "mapTerrain": "Default"
+  }
+}
