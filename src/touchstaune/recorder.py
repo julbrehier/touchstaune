@@ -78,7 +78,10 @@ class GameRecorder:
         self._save_every = save_every
         self._end_after_misses = end_after_misses
         self._now = now
-        self._reset()
+        self._game_dir: Path | None = None
+        self._last_payload: dict[str, Any] | None = None
+        self._last_saved_game_time = float("-inf")
+        self._misses = 0
 
     @property
     def game_dir(self) -> Path | None:
@@ -134,8 +137,8 @@ class GameRecorder:
         return StepResult(RecorderState.ENDED, saved=self.finalise())
 
     def _reset(self) -> None:
-        self._game_dir: Path | None = None
-        self._last_payload: dict[str, Any] | None = None
+        self._game_dir = None
+        self._last_payload = None
         self._last_saved_game_time = float("-inf")
         self._misses = 0
 
