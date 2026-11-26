@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import ValidationError
 
-from riftlens.live_client import AllGameData, Team
+from touchstaune.live_client import AllGameData, Team
 
 
 @pytest.fixture

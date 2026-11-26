@@ -8,8 +8,8 @@ from typing import Any
 import httpx
 import pytest
 
-from riftlens.live_client import LiveClient, LiveClientError
-from riftlens.live_client.client import build_ssl_context
+from touchstaune.live_client import LiveClient, LiveClientError
+from touchstaune.live_client.client import build_ssl_context
 
 Handler = Callable[[httpx.Request], httpx.Response]
 

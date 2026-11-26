@@ -9,7 +9,7 @@ from typing import Any
 
 import pytest
 
-from riftlens.recorder import GameRecorder, RecorderState
+from touchstaune.recorder import GameRecorder, RecorderState
 
 FIXED_NOW = datetime(2026, 11, 26, 15, 0, 0)
 

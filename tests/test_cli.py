@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pytest
 
-from riftlens import __version__
-from riftlens.cli import build_parser, run_probe
+from touchstaune import __version__
+from touchstaune.cli import build_parser, run_probe
 
 
 def test_probe_defaults() -> None:

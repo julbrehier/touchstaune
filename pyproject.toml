@@ -3,9 +3,9 @@ requires = ["hatchling>=1.24"]
 build-backend = "hatchling.build"
 
 [project]
-name = "riftlens"
+name = "touchstaune"
 dynamic = ["version"]
-description = "A Riot-policy-compliant League of Legends overlay built exclusively on official APIs."
+description = "Live true-gold-value overlay for League of Legends, built on official Riot APIs only."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
@@ -38,20 +38,20 @@ dev = [
 ]
 
 [project.scripts]
-riftlens = "riftlens.cli:main"
+touchstaune = "touchstaune.cli:main"
 
 [project.urls]
-Repository = "https://github.com/julbrehier/riftlens"
-Issues = "https://github.com/julbrehier/riftlens/issues"
+Repository = "https://github.com/julbrehier/touchstaune"
+Issues = "https://github.com/julbrehier/touchstaune/issues"
 
 # --------------------------------------------------------------------------- #
 # Build
 # --------------------------------------------------------------------------- #
 [tool.hatch.version]
-path = "src/riftlens/__init__.py"
+path = "src/touchstaune/__init__.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/riftlens"]
+packages = ["src/touchstaune"]
 
 # --------------------------------------------------------------------------- #
 # Lint / format
@@ -100,7 +100,7 @@ testpaths = ["tests"]
 addopts = ["-ra", "--strict-markers", "--import-mode=importlib"]
 
 [tool.coverage.run]
-source = ["riftlens"]
+source = ["touchstaune"]
 branch = true
 
 [tool.coverage.report]

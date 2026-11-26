@@ -1,6 +1,6 @@
 """Pure text rendering of game state. No I/O: every function returns a string."""
 
-from riftlens.live_client import AllGameData, Player, Team
+from touchstaune.live_client import AllGameData, Player, Team
 
 _WIDTH = 80
 

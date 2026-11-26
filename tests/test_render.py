@@ -4,8 +4,8 @@ from typing import Any
 
 import pytest
 
-from riftlens.live_client import AllGameData
-from riftlens.render import format_clock, format_scoreboard
+from touchstaune.live_client import AllGameData
+from touchstaune.render import format_clock, format_scoreboard
 
 
 @pytest.mark.parametrize(

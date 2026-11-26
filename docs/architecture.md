@@ -1,6 +1,6 @@
 # Architecture
 
-RiftLens is organised in four layers. Dependencies only point **downwards**. The UI never
+TouchstAune is organised in four layers. Dependencies only point **downwards**. The UI never
 talks to an API directly, and the analysis code never knows where its data came from.
 
 ```mermaid

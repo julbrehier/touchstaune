@@ -18,7 +18,7 @@ from enum import StrEnum
 from pathlib import Path
 from typing import Any, Protocol
 
-from riftlens.live_client import AllGameData, parse_all_game_data
+from touchstaune.live_client import AllGameData, parse_all_game_data
 
 logger = logging.getLogger(__name__)
 

@@ -1,6 +1,6 @@
 # Compliance
 
-RiftLens must stay within Riot's
+TouchstAune must stay within Riot's
 [Developer API Policy](https://developer.riotgames.com/docs/lol) and
 [third-party application stance](https://support-leagueoflegends.riotgames.com/hc/en-us/articles/225266848).
 This file turns those policies into rules for the code. **Every feature PR is checked against it**

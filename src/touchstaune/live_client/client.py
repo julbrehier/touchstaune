@@ -9,7 +9,7 @@ from typing import Any, Self
 import httpx
 from pydantic import ValidationError
 
-from riftlens.live_client.models import AllGameData
+from touchstaune.live_client.models import AllGameData
 
 logger = logging.getLogger(__name__)
 

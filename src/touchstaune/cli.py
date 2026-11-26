@@ -1,4 +1,4 @@
-"""Command-line entry point: ``riftlens <command>``."""
+"""Command-line entry point: ``touchstaune <command>``."""
 
 import argparse
 import logging
@@ -6,18 +6,18 @@ import time
 from collections.abc import Sequence
 from pathlib import Path
 
-from riftlens import __version__
-from riftlens.live_client import LiveClient, LiveClientError
-from riftlens.recorder import GameRecorder, RecorderState
-from riftlens.render import format_scoreboard
+from touchstaune import __version__
+from touchstaune.live_client import LiveClient, LiveClientError
+from touchstaune.recorder import GameRecorder, RecorderState
+from touchstaune.render import format_scoreboard
 
-logger = logging.getLogger("riftlens")
+logger = logging.getLogger("touchstaune")
 
 
 def build_parser() -> argparse.ArgumentParser:
     """Argument parser for all sub-commands."""
     parser = argparse.ArgumentParser(
-        prog="riftlens",
+        prog="touchstaune",
         description="Riot-policy-compliant League of Legends overlay (official APIs only).",
     )
     parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
