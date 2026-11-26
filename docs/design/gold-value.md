@@ -95,7 +95,19 @@ Reconstructed values are always labelled **estimated** in the UI.
   explicitly banned). Showing augment values must be checked against the current
   policy before it is built.
 
-## 6. Known limitations
+## 6. Findings from real data
+
+From the first recorded snapshot (Practice Tool, 2026-11-26):
+
+- **The Live Client `price` field is the recipe (combine) cost**, not the total cost
+  (Infinity Edge reports 725). Shop value **must** use Data Dragon's `gold.total`.
+- **Units are mixed.** Crit chance and vamps are fractions, crit damage is a percentage, and
+  percent penetration is a *remaining-resistance multiplier* (`0.65` = 35 % penetration).
+  The stat catalogue (plan step 2.4) must normalise them before any gold rate is applied.
+- **Live stats include temporary buffs** (Ghost was showing 725 movement speed). The live
+  stat value needs either a list of transient stats to exclude, or smoothing over time.
+
+## 7. Known limitations
 
 - Effects that aren't stats (actives, on-hit damage, shields, unique passives) are worth
   something but have no stat equivalent. They are **out of scope for v1** and appear
@@ -104,7 +116,7 @@ Reconstructed values are always labelled **estimated** in the UI.
 - Gold rates depend on which items are used as references. That choice is documented
   and versioned with each patch.
 
-## 7. Implementation plan (one PR each)
+## 8. Implementation plan (one PR each)
 
 1. `ddragon`: versioned client and on-disk cache for `versions.json`, `item.json` and `champion/*.json`.
 2. `value.rates`: reference-item selection and NNLS solver for `g_s`, with a residual report.

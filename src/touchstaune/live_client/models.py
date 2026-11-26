@@ -44,7 +44,11 @@ class GameData(_RiotModel):
 
 
 class Item(_RiotModel):
-    """An item in a player's inventory, as shown on the scoreboard."""
+    """An item in a player's inventory, as shown on the scoreboard.
+
+    Warning: ``price`` is the item's **recipe (combine) cost**, not its total cost
+    (e.g. Infinity Edge reports 725). Total gold cost must come from Data Dragon.
+    """
 
     item_id: int = Field(alias="itemID")
     display_name: str
@@ -79,6 +83,7 @@ class _Identified(_RiotModel):
 
     riot_id: str | None = None
     riot_id_game_name: str | None = None
+    riot_id_tag_line: str | None = None
     summoner_name: str | None = None
 
     @property
@@ -113,16 +118,62 @@ class Player(_Identified):
 
 
 class ChampionStats(_RiotModel):
-    """Live stats of the active player's champion (the in-game 'C' panel)."""
+    """Live stats of the active player's champion (the in-game "C" panel).
 
-    attack_damage: float = 0.0
-    ability_power: float = 0.0
-    attack_speed: float = 0.0
-    armor: float = 0.0
-    magic_resist: float = 0.0
-    current_health: float = 0.0
-    max_health: float = 0.0
+    Values are **totals** (base + level growth + items + runes + buffs), including temporary
+    effects such as Ghost's movement speed. Units are not uniform across fields; the
+    conventions below were observed on real snapshots (see tests/test_real_snapshot.py):
+
+    - ``crit_chance``, ``life_steal``, ``omnivamp``, ``physical_vamp``, ``spell_vamp``,
+      ``heal_shield_power``: fractions (``1.0`` = 100 %).
+    - ``crit_damage``: a percentage (``230.0`` = 230 % of attack damage).
+    - ``*_penetration_percent``: a **multiplier on the target's remaining resistance**
+      (``1.0`` = no penetration, ``0.65`` = 35 % penetration). Use the ``*_fraction``
+      properties for the penetration itself.
+    - ``ability_haste``, ``tenacity``: plain points / percentage points.
+    """
+
     ability_haste: float = 0.0
+    ability_power: float = 0.0
+    armor: float = 0.0
+    armor_penetration_flat: float = 0.0
+    armor_penetration_percent: float = 1.0
+    attack_damage: float = 0.0
+    attack_range: float = 0.0
+    attack_speed: float = 0.0
+    bonus_armor_penetration_percent: float = 1.0
+    bonus_magic_penetration_percent: float = 1.0
+    crit_chance: float = 0.0
+    crit_damage: float = 0.0
+    current_health: float = 0.0
+    heal_shield_power: float = 0.0
+    health_regen_rate: float = 0.0
+    life_steal: float = 0.0
+    magic_lethality: float = 0.0
+    magic_penetration_flat: float = 0.0
+    magic_penetration_percent: float = 1.0
+    magic_resist: float = 0.0
+    max_health: float = 0.0
+    move_speed: float = 0.0
+    omnivamp: float = 0.0
+    physical_lethality: float = 0.0
+    physical_vamp: float = 0.0
+    resource_max: float = 0.0
+    resource_regen_rate: float = 0.0
+    resource_type: str = ""
+    resource_value: float = 0.0
+    spell_vamp: float = 0.0
+    tenacity: float = 0.0
+
+    @property
+    def armor_penetration_fraction(self) -> float:
+        """Percent armour penetration as a fraction (``0.35`` = 35 %)."""
+        return 1.0 - self.armor_penetration_percent
+
+    @property
+    def magic_penetration_fraction(self) -> float:
+        """Percent magic penetration as a fraction (``0.35`` = 35 %)."""
+        return 1.0 - self.magic_penetration_percent
 
 
 class ActivePlayer(_Identified):

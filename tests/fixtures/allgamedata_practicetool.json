@@ -1,0 +1,299 @@
+{
+  "activePlayer": {
+    "abilities": {
+      "E": {
+        "abilityLevel": 0,
+        "displayName": "Vault",
+        "id": "QuinnE",
+        "rawDescription": "GeneratedTip_Spell_QuinnE_Description",
+        "rawDisplayName": "GeneratedTip_Spell_QuinnE_DisplayName"
+      },
+      "Passive": {
+        "displayName": "Harrier",
+        "id": "QuinnPassive",
+        "rawDescription": "GeneratedTip_Passive_QuinnPassive_Description",
+        "rawDisplayName": "GeneratedTip_Passive_QuinnPassive_DisplayName"
+      },
+      "Q": {
+        "abilityLevel": 1,
+        "displayName": "Blinding Assault",
+        "id": "QuinnQ",
+        "rawDescription": "GeneratedTip_Spell_QuinnQ_Description",
+        "rawDisplayName": "GeneratedTip_Spell_QuinnQ_DisplayName"
+      },
+      "R": {
+        "abilityLevel": 0,
+        "displayName": "Behind Enemy Lines",
+        "id": "QuinnR",
+        "rawDescription": "GeneratedTip_Spell_QuinnR_Description",
+        "rawDisplayName": "GeneratedTip_Spell_QuinnR_DisplayName"
+      },
+      "W": {
+        "abilityLevel": 0,
+        "displayName": "Heightened Senses",
+        "id": "QuinnW",
+        "rawDescription": "GeneratedTip_Spell_QuinnW_Description",
+        "rawDisplayName": "GeneratedTip_Spell_QuinnW_DisplayName"
+      }
+    },
+    "championStats": {
+      "abilityHaste": 18.0,
+      "abilityPower": 0.0,
+      "armor": 28.0,
+      "armorPenetrationFlat": 0.0,
+      "armorPenetrationPercent": 0.6499999761581421,
+      "attackDamage": 414.3999938964844,
+      "attackRange": 525.0,
+      "attackSpeed": 0.6679999828338623,
+      "bonusArmorPenetrationPercent": 1.0,
+      "bonusMagicPenetrationPercent": 1.0,
+      "critChance": 1.0,
+      "critDamage": 230.0,
+      "currentHealth": 575.0,
+      "healShieldPower": 0.0,
+      "healthRegenRate": 1.100000023841858,
+      "lifeSteal": 0.15000000596046448,
+      "magicLethality": 0.0,
+      "magicPenetrationFlat": 0.0,
+      "magicPenetrationPercent": 1.0,
+      "magicResist": 33.0,
+      "maxHealth": 575.0,
+      "moveSpeed": 725.0,
+      "omnivamp": 0.0,
+      "physicalLethality": 28.0,
+      "physicalVamp": 0.0,
+      "resourceMax": 269.0,
+      "resourceRegenRate": 1.399999976158142,
+      "resourceType": "MANA",
+      "resourceValue": 269.0,
+      "spellVamp": 0.0,
+      "tenacity": 5.0
+    },
+    "currentGold": 31174.6640625,
+    "fullRunes": {
+      "generalRunes": [
+        {
+          "displayName": "Dark Harvest",
+          "id": 8128,
+          "rawDescription": "perk_tooltip_DarkHarvest",
+          "rawDisplayName": "perk_displayname_DarkHarvest"
+        },
+        {
+          "displayName": "Cheap Shot",
+          "id": 8126,
+          "rawDescription": "perk_tooltip_CheapShot",
+          "rawDisplayName": "perk_displayname_CheapShot"
+        },
+        {
+          "displayName": "Grisly Mementos",
+          "id": 8140,
+          "rawDescription": "perk_tooltip_GrislyMementos",
+          "rawDisplayName": "perk_displayname_GrislyMementos"
+        },
+        {
+          "displayName": "Ultimate Hunter",
+          "id": 8106,
+          "rawDescription": "perk_tooltip_UltimateHunter",
+          "rawDisplayName": "perk_displayname_UltimateHunter"
+        },
+        {
+          "displayName": "Axiom Arcanist",
+          "id": 8224,
+          "rawDescription": "perk_tooltip_AxiomArcanist",
+          "rawDisplayName": "perk_displayname_AxiomArcanist"
+        },
+        {
+          "displayName": "Transcendence",
+          "id": 8210,
+          "rawDescription": "perk_tooltip_Transcendence",
+          "rawDisplayName": "perk_displayname_Transcendence"
+        }
+      ],
+      "keystone": {
+        "displayName": "Dark Harvest",
+        "id": 8128,
+        "rawDescription": "perk_tooltip_DarkHarvest",
+        "rawDisplayName": "perk_displayname_DarkHarvest"
+      },
+      "primaryRuneTree": {
+        "displayName": "Domination",
+        "id": 8100,
+        "rawDescription": "perkstyle_tooltip_7200",
+        "rawDisplayName": "perkstyle_displayname_7200"
+      },
+      "secondaryRuneTree": {
+        "displayName": "Sorcery",
+        "id": 8200,
+        "rawDescription": "perkstyle_tooltip_7202",
+        "rawDisplayName": "perkstyle_displayname_7202"
+      },
+      "statRunes": [
+        {
+          "id": 5007,
+          "rawDescription": "perk_tooltip_StatModCooldownReductionScaling"
+        },
+        {
+          "id": 5008,
+          "rawDescription": "perk_tooltip_StatModAdaptive"
+        },
+        {
+          "id": 5001,
+          "rawDescription": "perk_tooltip_StatModHealthScaling"
+        }
+      ]
+    },
+    "level": 1,
+    "riotId": "Player1#ANON",
+    "riotIdGameName": "Player1",
+    "riotIdTagLine": "ANON",
+    "summonerName": "Player1#ANON",
+    "teamRelativeColors": true
+  },
+  "allPlayers": [
+    {
+      "championName": "Quinn",
+      "isBot": false,
+      "isDead": false,
+      "items": [
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "Hubris",
+          "itemID": 6697,
+          "price": 750,
+          "rawDescription": "GeneratedTip_Item_6697_Description",
+          "rawDisplayName": "Item_6697_Name",
+          "slot": 0
+        },
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "Immortal Shieldbow",
+          "itemID": 6673,
+          "price": 825,
+          "rawDescription": "GeneratedTip_Item_6673_Description",
+          "rawDisplayName": "Item_6673_Name",
+          "slot": 1
+        },
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "Lord Dominik's Regards",
+          "itemID": 3036,
+          "price": 550,
+          "rawDescription": "GeneratedTip_Item_3036_Description",
+          "rawDisplayName": "Item_3036_Name",
+          "slot": 2
+        },
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "Bloodthirster",
+          "itemID": 3072,
+          "price": 325,
+          "rawDescription": "GeneratedTip_Item_3072_Description",
+          "rawDisplayName": "Item_3072_Name",
+          "slot": 3
+        },
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "The Collector",
+          "itemID": 6676,
+          "price": 525,
+          "rawDescription": "GeneratedTip_Item_6676_Description",
+          "rawDisplayName": "Item_6676_Name",
+          "slot": 4
+        },
+        {
+          "canUse": false,
+          "consumable": false,
+          "count": 1,
+          "displayName": "Infinity Edge",
+          "itemID": 3031,
+          "price": 725,
+          "rawDescription": "GeneratedTip_Item_3031_Description",
+          "rawDisplayName": "Item_3031_Name",
+          "slot": 5
+        }
+      ],
+      "level": 1,
+      "position": "NONE",
+      "rawChampionName": "game_character_displayname_Quinn",
+      "rawSkinName": "game_character_displayname_Quinn",
+      "respawnTimer": 0.0,
+      "riotId": "Player1#ANON",
+      "riotIdGameName": "Player1",
+      "riotIdTagLine": "ANON",
+      "runes": {
+        "keystone": {
+          "displayName": "Dark Harvest",
+          "id": 8128,
+          "rawDescription": "perk_tooltip_DarkHarvest",
+          "rawDisplayName": "perk_displayname_DarkHarvest"
+        },
+        "primaryRuneTree": {
+          "displayName": "Domination",
+          "id": 8100,
+          "rawDescription": "perkstyle_tooltip_7200",
+          "rawDisplayName": "perkstyle_displayname_7200"
+        },
+        "secondaryRuneTree": {
+          "displayName": "Sorcery",
+          "id": 8200,
+          "rawDescription": "perkstyle_tooltip_7202",
+          "rawDisplayName": "perkstyle_displayname_7202"
+        }
+      },
+      "scores": {
+        "assists": 0,
+        "creepScore": 0,
+        "deaths": 0,
+        "kills": 0,
+        "wardScore": 0.0
+      },
+      "skinID": 0,
+      "skinName": "Quinn",
+      "summonerName": "Player1#ANON",
+      "summonerSpells": {
+        "summonerSpellOne": {
+          "displayName": "Ghost",
+          "rawDescription": "GeneratedTip_SummonerSpell_SummonerHaste_Description",
+          "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHaste_DisplayName"
+        },
+        "summonerSpellTwo": {
+          "displayName": "Heal",
+          "rawDescription": "GeneratedTip_SummonerSpell_SummonerHeal_Description",
+          "rawDisplayName": "GeneratedTip_SummonerSpell_SummonerHeal_DisplayName"
+        }
+      },
+      "team": "ORDER"
+    }
+  ],
+  "events": {
+    "Events": [
+      {
+        "EventID": 0,
+        "EventName": "GameStart",
+        "EventTime": 0.019868500530719757
+      },
+      {
+        "EventID": 1,
+        "EventName": "MinionsSpawning",
+        "EventTime": 30.040124893188477
+      }
+    ]
+  },
+  "gameData": {
+    "gameMode": "PRACTICETOOL",
+    "gameTime": 81.84683227539062,
+    "mapName": "Map11",
+    "mapNumber": 11,
+    "mapTerrain": "Default"
+  }
+}
